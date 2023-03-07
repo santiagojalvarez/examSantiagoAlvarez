@@ -14,7 +14,7 @@ function App() {
 
   const handleSubmit = (event) =>{
     event.preventDefault()
-    if (user.nombre.length > 3 && user.color.length >5) {
+    if (user.nombre.length > 3 && user.nombre[0] !== " " && user.color.length >5) {
       setShow(true)
       
     }else{
